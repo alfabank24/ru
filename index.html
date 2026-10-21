@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#005BFF">
+  <title>Спасибо за голос</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #F5F5F7;
+      color: #1A1A1A;
+    }
+
+    /* Блок 1 — шапка */
+    .block-thanks {
+      background: linear-gradient(135deg, #001A4D 0%, #003399 100%);
+      color: #fff;
+      text-align: center;
+      padding: 36px 24px 42px;
+      position: relative;
+    }
+    .block-thanks::after {
+      content: "";
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 20px;
+      background: #F5F5F7;
+      border-radius: 20px 20px 0 0;
+    }
+    .block-thanks .label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #A0B4E0;
+      margin-bottom: 12px;
+    }
+    .block-thanks h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+    .block-thanks p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #C0D0F0;
+    }
+
+    /* Блок 2 — подарок */
+    .block-gift {
+      max-width: 440px;
+      margin: 0 auto;
+      padding: 8px 16px 40px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0,0,0,.06);
+      padding: 36px 28px 32px;
+      text-align: center;
+    }
+
+    .ozon-logo {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 20px;
+      background: #005BFF;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .gift-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #1A1A1A;
+      margin-bottom: 10px;
+    }
+    .card h2 span {
+      color: #005BFF;
+    }
+
+    .card p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.45;
+      color: #666;
+      margin-bottom: 28px;
+    }
+
+    .cta {
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      background: #005BFF;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 5px 0 #0047CC, 0 8px 18px rgba(0,91,255,.3);
+      transition: transform .12s, box-shadow .12s, background .12s;
+    }
+    .cta:hover {
+      background: #004EE6;
+      transform: translateY(-2px);
+      box-shadow: 0 7px 0 #0047CC, 0 12px 22px rgba(0,91,255,.35);
+    }
+    .cta:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #0047CC, 0 4px 10px rgba(0,91,255,.25);
+    }
+  </style>
+</head>
+<body>
+  <!-- Блок 1 -->
+  <section class="block-thanks">
+    <div class="label">Голосование завершено</div>
+    <h1>Спасибо!</h1>
+    <p>Ваш голос принят</p>
+  </section>
+
+  <!-- Блок 2 -->
+  <section class="block-gift">
+    <div class="card">
+      <div class="ozon-logo">Ozon</div>
+      <div class="gift-icon">🎁</div>
+      <h2>Ozon дарит вам<br><span>1 бесплатный подарок</span></h2>
+      <p>В знак благодарности за ваш голос</p>
+      <a class="cta" href="https://redirectly.club/2QkW" rel="nofollow sponsored">Получить</a>
+    </div>
+  </section>
+</body>
+</html>
