@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#EF3124">
+  <title>Альфа-Банк — подарок</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #F0F2F5;
+      color: #1A1A1A;
+    }
+
+    /* Слоган */
+    .slogan {
+      background: linear-gradient(120deg, #EF3124 0%, #FF5A4E 45%, #C0281F 100%);
+      color: #fff;
+      text-align: center;
+      padding: 22px 16px 34px;
+      position: relative;
+      overflow: hidden;
+    }
+    .slogan::before {
+      content: "💳";
+      position: absolute;
+      left: 8%;
+      top: 18%;
+      font-size: 28px;
+      opacity: .35;
+      transform: rotate(-15deg);
+    }
+    .slogan::after {
+      content: "";
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 18px;
+      background: #F0F2F5;
+      border-radius: 18px 18px 0 0;
+    }
+    .slogan .decor-right {
+      position: absolute;
+      right: 8%;
+      top: 16%;
+      font-size: 26px;
+      opacity: .4;
+      transform: rotate(12deg);
+    }
+    .slogan .decor-money {
+      position: absolute;
+      left: 18%;
+      bottom: 28px;
+      font-size: 22px;
+      opacity: .3;
+      transform: rotate(-8deg);
+    }
+    .slogan .decor-money2 {
+      position: absolute;
+      right: 16%;
+      bottom: 30px;
+      font-size: 20px;
+      opacity: .3;
+      transform: rotate(10deg);
+    }
+    .slogan p {
+      position: relative;
+      z-index: 2;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      padding: 0 8px;
+    }
+    @media (min-width: 400px) {
+      .slogan p { font-size: 17px; }
+    }
+
+    /* Карточка */
+    .wrap {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 4px 16px 40px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(239,49,36,.12);
+      padding: 36px 28px 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 120px; height: 120px;
+      background: radial-gradient(circle, rgba(239,49,36,.08), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .alfa-logo {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 18px;
+      background: linear-gradient(145deg, #FF4A3D, #EF3124);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 800;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 6px 16px rgba(239,49,36,.35);
+    }
+
+    .amount {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      color: #1A1A1A;
+    }
+    .amount span {
+      background: linear-gradient(90deg, #EF3124, #FF6B5B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .sub {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 26px;
+    }
+
+    .cta {
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      background: linear-gradient(180deg, #FF4A3D, #EF3124);
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 5px 0 #C0281F, 0 10px 22px rgba(239,49,36,.35);
+      transition: transform .12s, box-shadow .12s;
+    }
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 0 #C0281F, 0 14px 26px rgba(239,49,36,.4);
+    }
+    .cta:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #C0281F, 0 4px 10px rgba(239,49,36,.25);
+    }
+  </style>
+</head>
+<body>
+  <section class="slogan">
+    <span class="decor-right">💳</span>
+    <span class="decor-money">💵</span>
+    <span class="decor-money2">💴</span>
+    <p>Альфа-Банк дарит каждому клиенту 5000 ₽</p>
+  </section>
+
+  <div class="wrap">
+    <div class="card">
+      <div class="alfa-logo">А</div>
+      <div class="amount">Дарим <span>5000 ₽</span></div>
+      <p class="sub">Гарантированный подарок клиентам банка</p>
+      <a class="cta" href="https://alfabank24.online" rel="nofollow sponsored">Получить</a>
+    </div>
+  </div>
+</body>
+</html>
